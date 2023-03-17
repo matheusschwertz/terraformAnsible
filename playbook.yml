@@ -1,0 +1,9 @@
+- hosts: terraform-ansible 
+  tasks:
+  - name: criando o arquivo
+    copy: 
+      dest: 
+      content: <h1>Feito com duas tecnologias</h1>
+
+  - name: criando servidor 
+    shell: "nohup busybox httpd -f -p 8080 &"  
